@@ -11,6 +11,9 @@ const UserInput = () => {
     })
 
     const callUserInput = (inputIdent, value) => {
+        if(userInput.startInvest < 0 || userInput.annualInvest < 0 || userInput.expectReturn < 0 ||userInput.yearsInvest < 0){
+            return (alert("Number can not be negative"))
+        }
         setUserInput((prevState) => ({
             ...prevState, 
             [inputIdent]:value
