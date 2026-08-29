@@ -1,0 +1,9 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: rgb(46, 25, 49);
+    color: rgb(212, 233, 252);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
