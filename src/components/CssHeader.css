@@ -11,3 +11,10 @@ nav{
 nav img {
     height: 2rem;
 }
+
+@media (max-width: 800px){
+    nav h1 {
+        font-size: 1.25rem;
+        align-self: center;
+    }
+}
