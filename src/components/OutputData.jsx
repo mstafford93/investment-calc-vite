@@ -4,9 +4,9 @@ import { calculateInvestmentResults } from "../util/investment.js"
 const OutputData = ({ userInput }) => {
 
     const resultData = calculateInvestmentResults({
-        initialInvestment: +userInput.initialInvest,
+        initialInvestment: +userInput.startInvest,
         annualInvestment: +userInput.annualInvest,
-        expectedReturn: +userInput.expectedReturn,
+        expectedReturn: +userInput.expectReturn,
         duration: +userInput.yearsInvest
     });
 
