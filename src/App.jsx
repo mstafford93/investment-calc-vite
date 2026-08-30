@@ -1,8 +1,9 @@
-
+import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import UserInput from './components/UserInput'
-import { useState } from 'react'
+import OutputData from './components/OutputData'
+
 
 function App() {
   
@@ -33,6 +34,7 @@ function App() {
     <>
       <Header user="M.Stafford"/>
       <UserInput userInput={userInput} callUserInput={callUserInput}/>
+      <OutputData />
     </>
   )
 }
