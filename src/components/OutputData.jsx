@@ -1,5 +1,5 @@
 import React from 'react'
-import { calculateInvestmentResults } from "../util/investment.js"
+import { calculateInvestmentResults, formatter } from "../util/investment.js"
 import './CssOutputData.css'
 
 const OutputData = ({ userInput }) => {
@@ -11,7 +11,7 @@ const OutputData = ({ userInput }) => {
         duration: +userInput.yearsInvest
     });
 
-    console.log(resultData)
+    console.log(formatter.format(120))
 
     return (
   <table>
@@ -28,10 +28,10 @@ const OutputData = ({ userInput }) => {
       {resultData.map((yearData, index) => (
         <tr key={index}>
           <td>{yearData.year}</td>
-          <td>£ {yearData.investmentValue.toFixed(2)}</td>
-          <td>£ {yearData.interest.toFixed(2)}</td>
-          <td>£ {yearData.totalInterest.toFixed(2)}</td>
-          <td>£ {yearData.investedCapital.toFixed(2)}</td>
+          <td>{formatter.format(yearData.investmentValue)}</td>
+          <td>{formatter.format(yearData.interest)}</td>
+          <td>{formatter.format(yearData.totalInterest)}</td>
+          <td>{formatter.format(yearData.investedCapital)}</td>
         </tr>
       ))}
     </tbody>
