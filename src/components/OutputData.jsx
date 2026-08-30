@@ -1,9 +1,13 @@
 import React from 'react'
 
-const OutputData = () => {
+const OutputData = ({userInput}) => {
   return (
+    
     <div>
-      <p>Results Here</p>
+      <p>{userInput.startInvest}</p>
+      <p>{userInput.annualInvest}</p>
+      <p>{userInput.expectReturn}</p>
+      <p>{userInput.yearsInvest}</p>
     </div>
   )
 }

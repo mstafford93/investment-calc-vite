@@ -34,7 +34,7 @@ function App() {
     <>
       <Header user="M.Stafford"/>
       <UserInput userInput={userInput} callUserInput={callUserInput}/>
-      <OutputData />
+      <OutputData userInput={userInput}/>
     </>
   )
 }
