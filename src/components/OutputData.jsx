@@ -4,6 +4,10 @@ import './CssOutputData.css'
 
 const OutputData = ({ userInput }) => {
 
+  if (userInput.startInvest <= 0 || userInput.expectReturn <= 0 || userInput.annualInvest <= 0) {
+      return <p className='userError'>Please enter values greater than zero.</p>;
+    }
+
   if (userInput.yearsInvest <= 0) {
       return <p className='userError'>Please enter a duration greater than zero.</p>;
     }

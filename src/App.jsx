@@ -15,15 +15,7 @@ function App() {
       })
 
       const callUserInput = (inputIdent, value) => {
-        if (userInput.startInvest < 0 || userInput.annualInvest < 0 || userInput.expectReturn < 0 || userInput.yearsInvest < 0) {
-            return (alert("Number can not be negative"),
-                    setUserInput({
-                            startInvest: 0,
-                            annualInvest: 0,
-                            expectReturn: 0,
-                            yearsInvest: 0
-            }))
-        }
+        
         setUserInput((prevState) => ({
             ...prevState,
             [inputIdent]: +value  //Plus makes it return number not string
