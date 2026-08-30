@@ -1,0 +1,26 @@
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  justify-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td {
+  border: 1px solid #fcfcfc;
+  padding: 8px;
+  text-align: center;
+}
+
+tbody {
+    color: rgb(206, 205, 205);
+}
+
+th {
+  background-color: #fc49e4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(117, 62, 115);
+}
