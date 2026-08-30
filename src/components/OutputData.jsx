@@ -4,6 +4,10 @@ import './CssOutputData.css'
 
 const OutputData = ({ userInput }) => {
 
+  if (userInput.yearsInvest <= 0) {
+      return <p className='userError'>Please enter a duration greater than zero.</p>;
+    }
+
     const resultData = calculateInvestmentResults({
         initialInvestment: +userInput.startInvest,
         annualInvestment: +userInput.annualInvest,

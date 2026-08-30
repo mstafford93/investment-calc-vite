@@ -1,3 +1,12 @@
+.userError {
+  padding: 2rem;
+  justify-self: center;
+  background-color: #5c2154;
+  color: rgb(206, 205, 205);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+}
+
 table {
   width: 90%;
   border-collapse: collapse;
