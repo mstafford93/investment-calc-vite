@@ -1,23 +1,19 @@
 import React from 'react'
-import { calculateInvestmentResults } from "../util/investment"
+import { calculateInvestmentResults } from "../util/investment.js"
 
 const OutputData = ({ userInput }) => {
 
     const resultData = calculateInvestmentResults({
-        initialInvestment: +userInput.initialInvestment,
-        annualInvestment: +userInput.annualInvestment,
+        initialInvestment: +userInput.initialInvest,
+        annualInvestment: +userInput.annualInvest,
         expectedReturn: +userInput.expectedReturn,
-        duration: +userInput.duration
+        duration: +userInput.yearsInvest
     });
 
-    return (
+    console.log(resultData)
 
-        <div>
-            <p>{userInput.startInvest}</p>
-            <p>{userInput.annualInvest}</p>
-            <p>{userInput.expectReturn}</p>
-            <p>{userInput.yearsInvest}</p>
-        </div>
+    return (
+        <div></div>
     )
 }
 
