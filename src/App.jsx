@@ -26,7 +26,7 @@ function App() {
         }
         setUserInput((prevState) => ({
             ...prevState,
-            [inputIdent]: value
+            [inputIdent]: +value  //Plus makes it return number not string
         }))
     }
 
