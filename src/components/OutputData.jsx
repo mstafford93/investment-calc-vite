@@ -2,7 +2,6 @@ import React from 'react'
 import { calculateInvestmentResults, formatter } from "../util/investment.js"
 import { generatepdf } from '../util/generateReport.js'
 import './CssOutputData.css'
-import UserInput from './UserInput.jsx'
 
 const OutputData = ({ userInput }) => {
 
