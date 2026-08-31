@@ -1,6 +1,8 @@
 import React from 'react'
 import { calculateInvestmentResults, formatter } from "../util/investment.js"
+import { generatepdf } from '../util/generateReport.js'
 import './CssOutputData.css'
+import UserInput from './UserInput.jsx'
 
 const OutputData = ({ userInput }) => {
 
@@ -19,9 +21,15 @@ const OutputData = ({ userInput }) => {
         duration: +userInput.yearsInvest
     });
 
-    console.log(formatter.format(120))
+    console.log(resultData)
+
+    const handleGenerateReport = () => {
+      generatepdf({...userInput, results: resultData})
+    }
 
     return (
+      <>
+      <button onClick={handleGenerateReport}>Generate Report</button>
   <table>
     <thead>
       <tr>
@@ -44,6 +52,7 @@ const OutputData = ({ userInput }) => {
       ))}
     </tbody>
   </table>
+  </>
 )
 }
 
