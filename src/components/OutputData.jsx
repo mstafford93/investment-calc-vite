@@ -28,7 +28,9 @@ const OutputData = ({ userInput }) => {
 
     return (
       <>
-      <button onClick={handleGenerateReport}>Generate Report</button>
+      <div className='buttonContainer'>
+      <button onClick={handleGenerateReport} className='PDFButton'>Generate Report</button>
+      </div>
   <table>
     <thead>
       <tr>

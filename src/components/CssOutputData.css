@@ -7,6 +7,22 @@
   border-radius: 8px;
 }
 
+.buttonContainer {
+  text-align: center;
+}
+
+.PDFButton {
+  background-color: #180115;
+  color: rgb(206, 205, 205);
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.PDFButton:hover {
+  background-color: #88267b;
+}
+
 table {
   width: 90%;
   border-collapse: collapse;
