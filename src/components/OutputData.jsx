@@ -1,4 +1,3 @@
-import React from 'react'
 import { calculateInvestmentResults, formatter } from "../util/investment.js"
 import { generatepdf } from '../util/generateReport.js'
 import './CssOutputData.css'
@@ -20,7 +19,7 @@ const OutputData = ({ userInput }) => {
         duration: +userInput.yearsInvest
     });
 
-    console.log(resultData)
+    console.log("resultData = " + resultData)
 
     const handleGenerateReport = () => {
       generatepdf({...userInput, results: resultData})
