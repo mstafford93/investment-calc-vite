@@ -21,10 +21,10 @@ function App() {
     setTimeout(() => {
       setIsLoading("notLoading");
     }, 2000)
-  }, []
+  }, [userInput]
   )
   
-  console.log(isLoading)
+  //console.log(isLoading)
 
       const callUserInput = (inputIdent, value) => {
         
@@ -38,7 +38,7 @@ function App() {
     <>
       <Header user="M.Stafford"/>
       <UserInput userInput={userInput} callUserInput={callUserInput}/>
-      {isLoading === "isLoading" ? <p className='userError'>Calulating Results</p> : <OutputData userInput={userInput}/>}
+      {isLoading === "isLoading" ? <p className='userError'>Calulating Results...</p> : <OutputData userInput={userInput}/>}
     </>
   )
 }

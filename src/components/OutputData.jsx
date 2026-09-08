@@ -19,7 +19,7 @@ const OutputData = ({ userInput }) => {
         duration: +userInput.yearsInvest
     });
 
-    console.log("resultData = " + resultData)
+    //console.log("resultData = " + resultData)
 
     const handleGenerateReport = () => {
       generatepdf({...userInput, results: resultData})

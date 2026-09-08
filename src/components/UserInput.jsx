@@ -3,7 +3,7 @@ import '../components/CssUserInput.css'
 
 const UserInput = ({userInput, callUserInput}) => {
 
-    console.log(userInput)
+    //console.log(userInput)
     
     return (
         <section className='user-inputs'>
