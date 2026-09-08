@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
 import UserInput from './components/UserInput'
@@ -13,6 +13,18 @@ function App() {
           expectReturn: 6,
           yearsInvest: 35
       })
+  const [isLoading, setIsLoading] = useState("notLoading")
+
+  useEffect(()=>{
+    setIsLoading("isLoading")
+
+    setTimeout(() => {
+      setIsLoading("notLoading");
+    }, 2000)
+  }, []
+  )
+  
+  console.log(isLoading)
 
       const callUserInput = (inputIdent, value) => {
         
@@ -26,7 +38,7 @@ function App() {
     <>
       <Header user="M.Stafford"/>
       <UserInput userInput={userInput} callUserInput={callUserInput}/>
-      <OutputData userInput={userInput}/>
+      {isLoading === "isLoading" ? <p className='userError'>Calulating Results</p> : <OutputData userInput={userInput}/>}
     </>
   )
 }
