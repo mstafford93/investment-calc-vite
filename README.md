@@ -66,7 +66,7 @@ npm run dev
 
 ## Credits
 
-- **Course Provider:** <a href="https://www.itonlinelearning-academy.com/" target="_blank">ITOnlineleearning</a>  
+- **Course Provider:** <a href="https://www.itonlinelearning-academy.com/" target="_blank">ITOnlinelearning</a>  
 
 ---
 
