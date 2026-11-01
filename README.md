@@ -1,77 +1,76 @@
 # Investment Calculator Vite
 
-An investment calculator app created in Vite, with template provided by ITOnlinelearning. To display my knowledge of Vite React, converting data input to a table format. Restricting human error data inputs where possible. As well as being able to download a PDF of the results on demand.
+## Preview
 
----
-
-## Table of Contents
-
-* [Header](#header)  
-* [Technologies Used](#technologies-used)  
+![Screenshot IVC-Home](https://miro.medium.com/v2/resize:fit:720/format:webp/1*MJQXxYPjdksHRT_W4ph3GQ.jpeg)
+![Screenshot IVC-HandleUserError](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Xo5qEgkJYn8BneEDkqBsAg.png)
 
 
 
----
 
-## Header
+<br>
+<a href="https://investment-calc-vite.vercel.app" target="_blank">Live Link Here</a>
 
-- **Motivation:** First Vite project, to enhance my knowledge of Vite  
-- **Objective:** Create an appealing and functional display, using a Vite layout  
-- **Learning Outcomes:** I learnt about the passing props, best practices, and using ternary operators effectively.
+## Overview
 
----
+I created a Investment Calculator that takes user inputs and is able to calculate interest of an amount of year that a user can input.
+They can not add minus numbers or zero. This removes the chance for errors with the mathematical equations, and the user is unable to produce the PDF when minus numbers or zero is present in the user inputted data.
+<br>
+<strong>More detail on the process of creating the web page <a href="https://medium.com/@mgstafford/learning-to-code-react-challenge-investment-calculator-b0d413bb93ae" target="_blank">Click here</a></strong>
 
-<h2>Technologies Used</h2>
-
-<ul>
-  <li><strong>Languages & Libraries:</strong> Vite, JavaScript</li>
-  <li><strong>Tools:</strong> VS Code, GitHub</li>
-</ul>
-
-
-  <img src="https://img.shields.io/badge/Vite-3776AB?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-</p>
-
----
-
-<!--
-## Installation
-
-Example of a Step-by-step instructions to set up the project locally:
-
-```bash
-
-# Clone the repository
-git clone https://github.com/mstafford93/investment-calc-vite
-.git
-
-# Navigate to the project folder
-cd investment-calc-vite
-
-# Run project
-npm run dev
--->
-
----
-
-## Conclusion 
+## Features
 
 - The project works and is able to calculate and produce the PDF on request.
 - Using ternary operators to remove certain inputs are correct, reduces errors.
-- Double check spellings and other documents provided to ensure code runs smoothly.
-- This project has given me a different approach to error handling.
+- Calculate interest dependent on user input
+  
+## Technologies
 
----
+ - React Vite for page structure, and fuctionality.
+ - CSS3 for styling.
+ - JavaScript for calculating user information and formatting the PDF
+
+
+## Installation
+
+Follow these steps to run the project locally on your machine:
+
+### Prerequisites
+* **Node.js** (v18.0.0 or higher recommended)
+* **npm** (v9.0.0+)
+
+### Step-by-Step Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   cd investment-calc-vite
+   ```
+
+2. **Install project dependencies:**
+   Choose the command matching your package manager:
+   ```bash
+   npm install
+   ```
+
+3. **Start the local development server:**
+   ```bash
+   npm run dev 
+   ```
+
+4. **Open the application:**
+   Once the server boots up, Vite will provide a local URL (usually `http://localhost:5173`). Ctrl+Click or paste that address into your browser to view the app.
+
+## Deployment
+
+The website is hosted on Vercel.
+
+Visit the live version here:
+
+https://investment-calc-vite.vercel.app
 
 ## Credits
 
-- **Course Provider:** <a href="https://www.itonlinelearning-academy.com/" target="_blank">ITOnlinelearning</a>  
+By Matthew Stafford (Me)
 
----
-
-## License
-
-This project has no current licence – feel free to use and modify it.  
-
----
+A Front-End Developer project to advertise myself and my skills
